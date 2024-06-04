@@ -1,0 +1,56 @@
+:root {
+  --color-primary: rgb(164, 164, 178);
+  --outline: 1px solid rgb(225, 225, 225);
+}
+
+main {
+  padding-top: 8rem;
+}
+h1 {
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: var(--outline);
+  font-size: 3rem;
+  color: var(--color-primary);
+  letter-spacing: -0.55rem;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  background-color: white;
+  border-bottom: 2px solid var(--color-primary);
+  z-index: 1;
+}
+
+#header-menu {
+  display: flex;
+}
+
+#header-menu {
+  margin-top: 0;
+}
+
+#toggle-header-menu {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  #toggle-header-menu {
+    display: flex;
+  }
+  #header-menu {
+    display: none;
+    margin-top: 1rem;
+  }
+  #header-menu.expanded {
+    display: flex;
+  }
+}
